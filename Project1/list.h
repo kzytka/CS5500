@@ -32,7 +32,7 @@ void print_list(list *ll);
  * pointer ll should still point to a valid, empty list when this function
  * returns. Any memory allocated to store nodes in the list should be freed.
  */
-void flush_list(list *ll);
+void flush_list(list **ll);
 
 /* De-allocates all data for the list. Ensure all memeory allocated for list
  * ll is freed, including any allocated strings and list ll iteself. */
