@@ -7,7 +7,7 @@ struct Node{
 };
 
 typedef struct List{
-    node *head
+    node *head;
 } list;
 
 /* Allocate space for a new list and set its head to Null
@@ -36,4 +36,4 @@ void flush_list(list *ll);
 
 /* De-allocates all data for the list. Ensure all memeory allocated for list
  * ll is freed, including any allocated strings and list ll iteself. */
-void free_list(list *ll);
+void free_list(list **ll);
