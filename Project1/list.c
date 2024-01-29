@@ -3,18 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Declaring all the structs */
-/*typedef struct Node node;
-
-struct Node{
-    char *item;
-    node *next;
-};
-
-typedef struct List{
-    node *head;
-} list;*/
-
 /* Allocate space for a new list and set its head to Null
  * Returns the created list if successful, NULL otherwise. */
 list* create_list(){
