@@ -1,6 +1,7 @@
-#include "list.h"
+#include <list.h>
 
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 
 /* Allocate space for a new list and set its head to Null
@@ -24,6 +25,7 @@ int add_to_list(list* ll, char* item){
     //check if node is empty
     if(newNode != NULL){
         //create the node
+        newNode->item = malloc(strlen(item));
         newNode->item = strdup(item);
         newNode->next = NULL;
         //find where the node should go
@@ -88,8 +90,7 @@ void flush_list(list *ll){
     }
 
     free(temp);
-    free(ll);
-    ll = create_list();
+    ll->head = NULL;
 }//flush_list
 
 /* De-allocates all data for the list. Ensure all memeory allocated for list

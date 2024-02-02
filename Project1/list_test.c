@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "list.c"
+#include <list.h>
 
 int main(int argc, char *argv[]){
 
@@ -21,16 +21,20 @@ int main(int argc, char *argv[]){
     print_list(myList);
 
     flush_list(myList);
-        print_list(myList);
+    printf("List Flushed\n");
 
-    add_to_list(myList, "h");
-    add_to_list(myList, "he");
-    add_to_list(myList, "hel");
-    add_to_list(myList, "hell");
-    add_to_list(myList, "hello");
+    list* newList;
 
-    free_list(&myList);
-    print_list(myList);
+    newList = create_list();
+
+    add_to_list(newList, "h");
+    add_to_list(newList, "he");
+    add_to_list(newList, "hel");
+    add_to_list(newList, "hell");
+    add_to_list(newList, "hello");
+
+    free_list(&newList);
+    printf("List freed\n");
 
     return 0;
 
