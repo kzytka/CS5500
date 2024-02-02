@@ -1,3 +1,8 @@
+Group members:
+Kiley Zytka
+Mahsa Rahimian
+Jennifer Aparicio Shifferaw
+
 Implementation of Linked Lists
 In this project, linked list data structure written in C is implemented. An item is a character string (item) in a linked list, which is a dynamic data structure made up of nodes that each hold a pointer to the next node (next). Using a header file (list.h) for declarations, a source file (list.c) for function implementations, and a test file (list_test.c) for demonstration, the implementation adheres to best practices.
 Running Tests
