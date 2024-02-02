@@ -58,4 +58,4 @@ Contact
 If you require clarification on anything, please contact us:
 	•	Kiley Zytka
 	•	Mahsa Rahimian
-	•	JenniferAparicio
+	•	Jennifer Aparicio Shifferaw
