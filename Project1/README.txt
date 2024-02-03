@@ -3,9 +3,17 @@ Kiley Zytka
 Mahsa Rahimian
 Jennifer Aparicio Shifferaw
 
+We have neither given nor received unauthorized assistance on this work
+
 Implementation of Linked Lists
 In this project, linked list data structure written in C is implemented. An item is a character string (item) in a linked list, which is a dynamic data structure made up of nodes that each hold a pointer to the next node (next). Using a header file (list.h) for declarations, a source file (list.c) for function implementations, and a test file (list_test.c) for demonstration, the implementation adheres to best practices.
+
 Running Tests
+EAS VM Instructions:
+Our VM is located in the CS5500 folder/japarici and the VM is named Jen.
+The files are in /home/kzytka and the password is Got3@mgo! and it is not a root user. 
+
+GitHub Instructions:
 Use the following instructions to compile and launch the sample program that is provided:
 a. Make a repository clone:
 
@@ -18,8 +26,11 @@ make
 
 Make sure your system has a C compiler installed, such as gcc. Run the following command to get the source code compiled.
 c. Launch the provided application.
+
 ./list_test
+
 Run the program to verify the linked list implementation once compilation is successful.
+
 Documentations
 a. list.h: The structures and function prototypes required for the linked list implementation are declared in this header file. It specifies a List structure to control the list and a Node structure for every entry in the list.
 	•	Structures: 'Node' - every element in the linked list is represented by a node. It has a pointer to the following node (next) and a character string (item). 'List' - retains a pointer to the head node and maintains the linked list.
